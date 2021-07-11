@@ -1,0 +1,413 @@
+@import "reset.css";
+
+html {
+  background-color: rgba(0, 0, 0, 1);
+  color: rgb(255, 255, 255);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="text"] {
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 3%;
+  border: none;
+  border-bottom: solid white 1px;
+  padding: 5px;
+  margin: 10px;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+input[type="text"]:focus {
+  color: rgb(195, 195, 195);
+}
+
+input::placeholder {
+  color: white;
+  text-align: center;
+}
+
+input[type="button"],
+button {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  border: none;
+}
+
+input[type="button"]:hover,
+button:hover {
+  border-radius: 1.5px;
+  background-color: rgba(255, 255, 255, 0.28);
+}
+
+ul {
+  background-color: rgba(255, 255, 255, 0.28);
+  padding: 10px;
+  border-radius: 20px;
+  flex-direction: column;
+}
+
+select {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  border: none;
+  border-bottom: solid white 1px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+
+  height: 30px;
+}
+
+option {
+  color: black;
+}
+
+.big-box{
+  display: flex;
+  width: 900px;
+  height: 80vh;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 100%;
+  margin: 15px;
+}
+
+.box-left {
+  justify-content: space-between;
+}
+
+.box-center {
+  width: 40%;
+  align-items: center;
+}
+
+.box-right {
+  align-items: flex-end;
+}
+
+.left_time {
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 35px;
+  margin-bottom: 10px;
+}
+
+.left_time:hover {
+  background-color: rgba(255, 255, 255, 0.28);
+}
+
+.left_weather {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px;
+}
+
+.left_weather span {
+  margin: 5px 0px;
+  padding-left: 10px;
+}
+
+.left_memo {
+  display: flex;
+  width: 180px;
+  height: 180px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: white solid 1.5px;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.memo_title {
+  height: 10%;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.memo_contents {
+  display: flex;
+  justify-content: center;
+  height: 80%;
+}
+
+.memo_btns {
+  display: flex;
+  height: 10%;
+  justify-content: flex-end;
+  text-align: center;
+}
+
+.memo_btns button {
+  height: 25px;
+  width: 25px;
+}
+
+.contents_write {
+  border: none;
+  width: 90%;
+  height: 90%;
+  margin: 5px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.contents_letter {
+  margin-top: 15px;
+  width: 180px;
+  height: 145px;
+  white-space: pre-wrap;
+  overflow: auto;
+}
+
+.right_wish-list::-webkit-scrollbar,
+.center_todos::-webkit-scrollbar,
+.contents_letter::-webkit-scrollbar {
+  width: 3px;
+}
+
+.right_wish-list::-webkit-scrollbar-thumb,
+.center_todos::-webkit-scrollbar-thumb,
+.contents_letter::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 3px;
+}
+
+.right_wish-list::-webkit-scrollbar-track,
+.center_todos::-webkit-scrollbar-track,
+.contents_letter::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.28);
+  border-radius: 3px;
+}
+
+.alert_upload,
+.alert_delete {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  width: 200px;
+  border-radius: 20px;
+  padding: 10px;
+  margin-left: 7px;
+  position: fixed;
+   margin: 0 auto;
+   left: 50%;
+   transform: translateX( -50% );
+   top:50%;
+}
+
+.memo_alert {
+  position: fixed;
+}
+
+.memo_alert div span {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.alert_upload div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0px;
+}
+
+.alert_delete div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px 0px 0px 0px;
+}
+
+.memo_alert div div button {
+  color: red;
+}
+
+.memo_alert div div button:hover {
+  color: brown;
+}
+
+.left_quote .ul_title {
+  display: block;
+  margin: 0px 0px 5px 10px;
+  font-size: 20px;
+}
+
+.quote_div {
+  background-color: rgba(255, 255, 255, 0.28);
+  padding: 15px 10px 15px 15px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  line-height: 20px;
+}
+
+.memo_title,
+.owner__title,
+.time__clock,
+.ul_title {
+  font-family: sans-serif;
+  font-style: italic;
+}
+
+.owner__title {
+  margin: 15px 0px;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.ul_title {
+  font-weight: 700;
+  margin: 10px 0px;
+}
+
+.fa-check-square,
+.fa-square {
+  margin-right: 5px;
+}
+
+.center_motto {
+  margin: 15px 0px;
+  width: 400px;
+  height: 30px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: solid white 1.5px;
+}
+
+.motto_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.askMotto input {
+  border: none;
+  width: 300px;
+  font-size: 18px;
+}
+
+.remotto {
+  margin-left: 5px;
+  margin-top: 10px;
+  padding: 5px;
+  font-size: xx-small;
+}
+
+.remotto:hover {
+  background-color: rgba(255, 255, 255, 0.28);
+}
+
+.center_todos {
+  margin-bottom: 15px;
+  overflow: auto;
+  padding-right: 5px;
+}
+
+.todos__uls li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right_askname input[type="button"] {
+  margin: 10px 10px 10.5px 10px;
+}
+
+.rename {
+  padding: 5px;
+}
+
+.right_wish-list {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  padding-right: 5px;
+}
+
+.wish_lis {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1px;
+}
+
+.todos__add input::placeholder {
+  color: rgb(125, 125, 125);
+}
+
+.todos__add input[type="text"] {
+  border-bottom: rgb(125, 125, 125) solid 1px;
+}
+
+.todos__add input[type="text"]:focus {
+  border-bottom: white solid 1px;
+}
+
+.todos__add input[type="text"]:focus {
+  color: rgb(125, 125, 125);
+}
+
+.todos__add,
+.wish__add {
+  display: flex;
+  justify-content: center;
+}
+
+.alert_upload,
+.alert_delete,
+.memo_new,
+.memo_upload,
+.contents_write,
+.contents_letter,
+.askName,
+.rename,
+.askMotto,
+.motto_title,
+.ul__pending,
+.ul__finished,
+.todos__pending,
+.todos__finished {
+  display: none;
+}
+
+.showing {
+  display: flex;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}

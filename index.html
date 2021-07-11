@@ -1,0 +1,137 @@
+<html lang="en">
+<head>
+    <link rel="shortcut icon" sizes="16x16 32x32 64x64" href="https://postfiles.pstatic.net/MjAyMTA2MTBfMjEg/MDAxNjIzMjU5MjkwNDkz.8Bab2AsVUUYdxlghQ5mLylg8CkZ2xcQETSYfORoTNR8g.DfNTarBS-qzD1_XKmFr3xEz6kUyHi3DqTy0ANGDmuf4g.PNG.thdkswlsd/B88EE584-AA29-48C3-8ADB-AA038F54944F.png?type=w773">
+    <link rel="stylesheet" href="css/midea.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Space</title>
+</head>
+<body>
+    <div class="big-box">
+        <div class="box box-left">
+            <div class="left-top">
+                <div class="left_time 12hours">
+                    <span class="time__clock js-clock">00:00:00</span>
+                </div>
+        
+                <div class="left_weather">
+                    <span class="weather__span"></span>
+                    <span class="temp__span"></span>
+                </div>    
+            </div>
+            
+            <div class="left_memo">
+                <div class="memo_title">
+                    <span>Memo</span>
+                    <div class="memo_next">
+                        <i class="fas fa-chevron-left next_front"></i>
+                        <i class="fas fa-chevron-right next_back"></i>
+                    </div>
+                </div>
+                <div class="memo_contents">
+                    <textarea class="contents_write" cols="30" rows="10"></textarea>
+                    <p class="contents_letter"></p>
+                </div>
+                <div class="memo_btns">
+                    <button class="memo_new">🖋</button>
+                    <button class="memo_upload">↑</button>
+                    <button class="memo_delete">X</button>
+                </div>
+            </div>
+            <div class="memo_alert">
+                <div class = "alert_upload">
+                    <span>
+                        There is nothing to upload.<br>
+                        Please write the content.
+                    </span>
+                    <div>
+                        <button>X</button>
+                    </div>
+                </div>
+                <div class="alert_delete">
+                    <span>Are you sure you want to delete the memo?</span>
+                    <div>
+                        <button class="del_yes">Yes</button>
+                        <button class="del_no">No</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="left_quote">
+                <span class="ul_title">Quote</span>
+                <div class="quote_div"></div>
+            </div>
+    
+        </div>
+        <div class="box box-center">
+            <div class="center_owner">
+                <h1 class="owner__title js-owner">
+                    My Space
+                </h1>
+            </div>
+            <div class="center_motto">
+                <form class="askMotto">
+                    <input type="text" placeholder="what is your motto?">
+                </form>
+                <div class="motto_title">
+                    <h3 class="motto__text"></h3>
+                    <div class= "remotto">
+                        <i class="fas fa-redo"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="center_todos">
+                <form class="todos__add">
+                    <input type="text" placeholder="add your to-do">
+                </form>
+                <span class="ul_title ul__pending">Pending</span>
+                <ul class="todos__uls todos__pending"></ul>
+                <span class="ul_title ul__finished">Finished</span>
+                <ul class="todos__uls todos__finished"></ul>
+            </div>
+        </div>
+        <div class="box box-right">
+            <div class="right_askname">
+                <form class="js-askName askName">
+                    <input type="text" placeholder="what is your name?">
+                </form>
+                <input class= "rename" type="button" value="RENAME">
+            </div>
+            <div class="right_wish-list">
+                <select name="wanna" class="wish__select">
+                    <option value="">// Wish //</option>
+                    <option value="have">Want to have</option>
+                    <option value="do">Want to do</option>
+                    <option value="change">Want to change</option>
+                </select>
+                <form class="wish__add">
+                    <input type="text" placeholder="add your wish">
+                </form>
+                <span class="ul_title">Want to Have</span>
+                <ul class="wish_have_li"></ul>
+                <span class="ul_title">Want to Do</span>
+                <ul class="wish_do_li"></ul>
+                <span class="ul_title">Want to Change</span>
+                <ul class="wish_change_li"></ul>
+                <span class="ul_title">You Made It!</span>
+                <ul class="wish_made_li"></ul>
+            </div>
+        </div>
+    </div>
+    
+    <script src="src/index.js"></script>
+    <script src="src/time.js"></script>
+    <script src="src/setOwner.js"></script>
+    <script src="src/motto.js"></script>
+    <script src="src/todos.js"></script>
+    <script src="src/wish.js"></script>
+    <script src="src/image.js"></script>
+    <script src="src/quote.js"></script>
+    <script src="src/weather.js"></script>
+    <script src="src/memo.js"></script>
+    
+    <script src="https://kit.fontawesome.com/6d00a0ead1.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
