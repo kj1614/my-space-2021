@@ -2,7 +2,7 @@ const weatherDiv = document.querySelector(".left_weather");
 const weather = weatherDiv.querySelector(".weather__span");
 const temperature = weatherDiv.querySelector(".temp__span");
 
-const API_KEY = "a6140d1a31e399473a7c6f34518475ae";
+const API_KEY = "3e35d34f1df0c8f34816759e141daddd";
 const COORDS = 'coords';
 
 function saveCoords(coordsObj){
